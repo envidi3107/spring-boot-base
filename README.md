@@ -1,7 +1,5 @@
 # HRMS Backend
 
-Backend Spring Boot dùng làm nền cho các dự án Wetech.
-
 **Stack:** Java 21 · Spring Boot 4.1 · Spring Security (JWT tự phát hành, OAuth2 Resource Server) · Spring Data JPA (Hibernate 7) · PostgreSQL · Flyway · springdoc-openapi · Lombok · MapStruct · Testcontainers
 
 ## Chạy local
