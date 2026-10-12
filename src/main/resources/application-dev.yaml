@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+
+app:
+  security:
+    jwt:
+      # Chỉ dùng cho dev; môi trường thật bắt buộc đặt JWT_SECRET riêng
+      secret: ${JWT_SECRET:dev-only-secret-change-me-0123456789abcdefghijklmnopqrstuvwxyz0123456789}
+    bootstrap-admin:
+      password: ${ADMIN_PASSWORD:Admin@123}
+
+management:
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    com.wetech.hrms: DEBUG
+    org.hibernate.SQL: DEBUG
+    # Bật để xem giá trị tham số bind vào câu SQL
+    # org.hibernate.orm.jdbc.bind: TRACE
